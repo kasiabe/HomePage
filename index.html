@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage - Katarzyna</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" property="og:title" content="Homepage - moja pierwsza" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/nav.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/container.css" rel="stylesheet">
+    <link href="/css/table.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="container js-container">
+    <button class="container__backgroundButton js-background">Włącz <span class="js-colorName">niebieski</span> kolor
+        tła</button>
+    <header>
+        <h1 class="container__header">Moja pierwsza strona</h1>
+    </header>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__listItem"><a href="#o-mnie" class="nav__link">O mnie</a></li>
+            <li class="nav__listItem"><a href="#czas-wolny" class="nav__link">Czas wolny</a></li>
+            <li class="nav__listItem"><a href="#polecajka" class="nav__link">Polecam</a></li>
+            <li class="nav__listItem"><a href="#trivia" class="nav__link">Ciekawostka</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section id="o-mnie">
+            <h2 class="main__subHeader">Coś o mnie...</h2>
+            <article class="article__aboutMe">
+                <p>
+                    <img class="article__photoMe js-photoMe" width="200" src="https://i.ibb.co/1qc2PfL/ja.jpg"
+                        alt="moje zdjęcie">
+                </p>
+                <p>
+                    <button class="article__deleteButton js-deleteButton">Usuń zdjęcie</button>
+                </p>
+                <p> Cześć, mam na imię Kasia. Jestem z Warszawy. Obecnie siędzę w domu na wychowawczym z małym <span
+                        class="article__pseudonim">Mefisto</span>
+                    o imieniu Stanisław.
+                </p>
+                <p> Ponieważ jeden demon to za mało mam jeszcze <strong>szalonego</strong> psa - Kajtka, i kota -
+                    Borysa. Kot jest już stary, i na jego szczęście na dożywociu u moich rodziców, zbyt maltretowany
+                    przez <em>Bombelka</em>.
+                </p>
+                <p><img class="article__photoDog" width="200" src="https://i.ibb.co/qxNkCcq/pies.jpg"
+                        alt="Kajtek, american bully">
+                    <img class="article__photoCat" width="250" src="https://i.ibb.co/XX97HDX/kot.jpg"
+                        alt="Borys, egzotyk">
+                    <img class="article__photoDog" width="200" src="https://i.ibb.co/6HhyP22/jazpies.jpg"
+                        alt="Ja i Kajtek">
+                </p>
+            </article>
+        </section>
+        <section id="czas-wolny">
+            <h2 class="main__subHeader">Jak spędzam wolny czas?</h2>
+            <article class="article__freeTime">
+                <p> W związku z tym, że mam więcej czasu (hahaha) postanowiłam coś zmienić w swoim życiu, i znaleźć nową
+                    pracę.
+                    Chcę
+                    spróbować sił jako frontend deweloper. Zobaczymy co będzie.
+                </p>
+                <p>Ponieważ na pokładzie mam rocznego syna, czas wolny mam zwykle dopiero wieczorem. No i oczywiście
+                    podczas
+                    jego
+                    drzemki - jak szczęście dopisze, to może być nawet 2h! <br>
+                    Ale... kiedy nie jestem <em>kurą domową</em> to lubię poczytać książki i poogladać seriale.
+                </p>
+            </article>
+        </section>
+
+        <article id="polecajka">
+            <div>
+                <h3 class="article__header">Tutaj moja mała lista ulubionych (kilka z wielu):</h3>
+                <p class="article__littleHeader">Książki (autorzy): </p>
+                <ul class="article__unorderedList">
+                    <li class="article__item">Aneta Jadowska</li>
+                    <li class="article__item">Marta Kisiel</li>
+                    <li class="article__item">J.K. Rowling</li>
+                    <li class="article__item">Simon Beckett</li>
+                </ul>
+                <p class="article__littleHeader">Seriale: </p>
+                <ul class="article__unorderedList">
+                    <li class="article__item"><a class="article__link" target="_blank" rel="noreferrer noopener"
+                            title="filmweb.pl o serialu"
+                            href="https://www.filmweb.pl/serial/Przybysze-2019-810043">Przybysze</a></li>
+                    <li class="article__item"><a class="article__link" target="_blank" rel="noreferrer noopener"
+                            title="filmweb.pl o serialu"
+                            href="https://www.filmweb.pl/serial/Doktor+Hart-2011-616115">Hart of Dixie</a></li>
+                    <li class="article__item"><a class="article__link" target="_blank" rel="noreferrer noopener"
+                            title="filmweb.pl o serialu"
+                            href="https://www.filmweb.pl/serial/Kochane+k%C5%82opoty-2000-98248">Gilmore Girls</a></li>
+                </ul>
+            </div>
+        </article>
+
+        <section id="trivia">
+            <div class="table">
+                <h3 class="table__header">Duże i małe</h3>
+                <table class="table__container">
+                    <caption class="table__caption">Ciekawostka ze świata fauny</caption>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="col">Zwierzęta na świecie</th>
+                        <th class="table__cell table__cell--header" scope="col">Największe</th>
+                        <th class="table__cell table__cell--header" scope="col">Gdzie występuje</th>
+                        <th class="table__cell table__cell--header" scope="col">Najmniejsze</th>
+                        <th class="table__cell table__cell--header" scope="col">Gdzie występuje</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Ssaki</th>
+                        <td class="table__cell">płetwal błękitny</td>
+                        <td class="table__cell">wszystkie oceany</td>
+                        <td class="table__cell">ryjówek etruski</td>
+                        <td class="table__cell">południe Europy i Azji, Afryka północna</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Gady</th>
+                        <td class="table__cell">krokodyl różańcowy</td>
+                        <td class="table__cell">wschód Indii, południowo-wschodnia Azja, północ Australii</td>
+                        <td class="table__cell">brookesia micra (kameleonowate)</td>
+                        <td class="table__cell">Madagaskar</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Płazy</th>
+                        <td class="table__cell">salamandra olbrzymia chińska</td>
+                        <td class="table__cell">Chiny</td>
+                        <td class="table__cell">Paedophryne amauensis (żabowate)</td>
+                        <td class="table__cell">Papua - Nowa Gwinea</td>
+                    </tr>
+
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

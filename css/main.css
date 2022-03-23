@@ -1,0 +1,79 @@
+.main__subHeader {
+    color: rgba(224, 51, 51, 0.692);
+}
+
+.article__aboutMe {
+    color: #2a2a2a;
+    width: 100%;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.article__freeTime {
+    color: #2a2a2a;
+    width: 100%;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.article__header {
+    color: rgba(232, 4, 4, 0.58);
+}
+
+.article__unorderedList {
+    padding: 0px;
+    width: 100%;
+}
+
+.article__item {
+    list-style-type: none;
+    padding: 5px 20px;
+}
+
+.article__link {
+    color: #2a2a2a;
+    text-decoration: none;
+}
+
+.article__link:hover {
+    color: hsla(0, 0%, 16%, 0.658);
+    text-decoration: underline;
+}
+
+.article__link:active {
+    color: rgb(231, 76, 60);
+}
+
+.article__littleHeader {
+    color: rgba(232, 4, 4, 0.58);
+    font-size: 15px;
+    font-style: italic;
+}
+
+.article__deleteButton {
+    border-radius: 15px;
+    border: 1px solid rgba(0, 128, 0, 0.863);
+    color: rgba(44, 51, 44, 0.86);
+}
+
+.article__deleteButton:hover {
+    color: hsla(120, 100%, 25%, 0.925);
+}
+
+.article__photoMe {
+    padding: 20px;
+}
+
+.article__photoDog {
+    padding: 10px;
+}
+
+.article__photoCat {
+    padding: 10px;
+    max-width: 250px;
+}
+
+.article__pseudonim {
+    color: #028ad8;
+    font-style: italic;
+}
