@@ -1,24 +1,33 @@
-console.log("Hej!");
+{
+    const welcome = () => {
+        console.log("Hej!");
+    }
 
-let backgroundElement = document.querySelector(".js-background");
-let containerElement = document.querySelector(".js-container");
-let deleteButtonElement = document.querySelector(".js-deleteButton");
-let photoMeElement = document.querySelector(".js-photoMe");
-let secondBackground = document.querySelector(".secondBackground")
-let colorNameElement = document.querySelector(".js-colorName")
+    const toggleBackground = () => {
+        const containerElement = document.querySelector(".js-container");
+        const colorNameElement = document.querySelector(".js-colorName");
 
+        containerElement.classList.toggle("secondBackground");
+        colorNameElement.innerText = containerElement.classList.contains("secondBackground") ? "szary" : "niebieski";
+    };
 
-deleteButtonElement.addEventListener("click", () => {
-    photoMeElement.remove();
+    const deletePhoto = () => {
+        const photoMeElement = document.querySelector(".js-photoMe");
 
-});
+        photoMeElement.remove();
+    }
 
-backgroundElement.addEventListener("click", () => {
-    containerElement.classList.toggle("secondBackground");
+    const init = () => {
 
-    colorNameElement.innerText = containerElement.classList.contains("secondBackground") ? "szary" : "niebieski";
+        const backgroundElement = document.querySelector(".js-background");
+        const deleteButtonElement = document.querySelector(".js-deleteButton");
 
-});
+        deleteButtonElement.addEventListener("click", deletePhoto);
+        backgroundElement.addEventListener("click", toggleBackground);
 
+        welcome();
+    };
 
+    init();
 
+}
