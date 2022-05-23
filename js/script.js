@@ -18,7 +18,6 @@
     }
 
     const init = () => {
-
         const backgroundElement = document.querySelector(".js-background");
         const deleteButtonElement = document.querySelector(".js-deleteButton");
 
@@ -29,5 +28,4 @@
     };
 
     init();
-
 }
