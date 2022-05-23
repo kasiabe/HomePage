@@ -20,6 +20,7 @@
 }
 
 .container__backgroundButton {
+    margin-top: 20px;
     border-radius: 15px;
     border: 1px solid rgba(0, 128, 0, 0.863);
     color: rgba(44, 51, 44, 0.86);
